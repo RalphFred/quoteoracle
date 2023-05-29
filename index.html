@@ -7,6 +7,9 @@
     <title>Document</title>
 
     <script src="https://kit.fontawesome.com/40d46a0e3a.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,10 +17,13 @@
 
             <div id="card--wrapper">
                 <i class="fa-solid fa-arrows-rotate" id="refresh"></i> 
+                
                 <div id="content">
                     
                     <div class="card" id="card">
-                        
+                        <div class="loader--wrapper">
+                            <lottie-player id="loader" src="src/images/loading.json" background="transparent"  speed="2"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                        </div>
                     </div> 
                 </div>
             </div>

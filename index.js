@@ -9,6 +9,7 @@ refreshBtn.addEventListener("click", ()=>{
 });
 
 
+
 async function displayQuote() {
    fetch(apiUrl)
    .then((response) => response.json())

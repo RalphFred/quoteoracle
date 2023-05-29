@@ -30,6 +30,12 @@
     
 }
 
+.loader--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .display{
     position: relative;
     height: 75vh;
