@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Neucha&display=swap');
+
+
+:root{
+
+    --mainColor: #482121;
+    --secondaryColor: #FFEDDB;
+    --accentColor: #F1F2F6;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(/sergey-musin-timespaceship-4k.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.display{
+    position: relative;
+    height: 75vh;
+    width: 75%;
+}
+
+
+#card--wrapper{
+    position: relative;
+}
+
+
+
+.card{
+    height: 400px;
+    aspect-ratio: 7/4;
+    padding: 4rem;
+    border: none;
+    border-radius: 1rem;
+
+    backdrop-filter: blur(6px);
+    color: var(--secondaryColor);
+}
+
+
+
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+}
+
+
+#refresh:hover{
+    animation: rotate .4s linear;
+}
+
+.quote--wrapper{
+    font-size: 2rem;
+}
+
+.quote{
+    margin-bottom: 1.25rem;
+    height: 12rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+@keyframes line {
+    from{width: 0;}
+    to{width: 60%;}
+}
+
+.line{
+    display: block;
+    background-color: var(--secondaryColor);
+    width: 60%;
+    height: 1px;
+    margin-bottom: .75rem;
+    animation-name: line;
+    animation-duration: 1s;
+}
+
+.name--wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    font-family: 'Neucha', cursive;
+}
+
+#refresh{
+    cursor: pointer;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    color: var(--secondaryColor);
+    z-index: 99;
+
+    position: absolute;
+    bottom: 1.25rem;
+    right: 4rem;
+}
