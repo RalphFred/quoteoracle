@@ -23,11 +23,13 @@
     width: 100%;
 
     background-image: url(src/images/sergey-musin-timespaceship-4k.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .loader--wrapper{
@@ -116,4 +118,31 @@
     position: absolute;
     bottom: 1.25rem;
     right: 4rem;
+}
+
+@media screen and (max-width: 540px) {
+    
+
+    .card{
+        height: 280px;
+        width: 80vw;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+
+    .quote--wrapper{
+        font-size: 1.2rem;
+    }
+
+    .quote{
+        margin: .75rem 0;
+        height: 10.25rem;
+    }
+
+    #refresh{
+        font-size: 1rem;
+
+        bottom: .8rem;
+        right: 1rem;
+    }
 }
