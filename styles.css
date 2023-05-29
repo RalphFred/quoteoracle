@@ -22,7 +22,7 @@
     height: 100vh;
     width: 100%;
 
-    background-image: url(/sergey-musin-timespaceship-4k.jpg);
+    background-image: url(src/images/sergey-musin-timespaceship-4k.jpg);
 
     display: flex;
     justify-content: center;
