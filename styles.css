@@ -78,11 +78,19 @@
     font-size: 2rem;
 }
 
+@keyframes rotation{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .quote{
     margin-bottom: 1.25rem;
     height: 12rem;
     font-family: 'Indie Flower', cursive;
+    animation: rotation 1s;
 }
+
+
 
 @keyframes line {
     from{width: 0;}
@@ -106,6 +114,8 @@
 
 .name{
     font-family: 'Neucha', cursive;
+
+    animation: rotation 1s;
 }
 
 #refresh{
