@@ -151,8 +151,7 @@
 
     #refresh{
         font-size: 1rem;
-
-        bottom: .8rem;
+        bottom: .2rem;
         right: 1rem;
     }
 }

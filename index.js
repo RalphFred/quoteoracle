@@ -1,29 +1,26 @@
 const apiUrl = "https://type.fit/api/quotes";
 const card = document.getElementById("card");
 
-
 const refreshBtn = document.getElementById("refresh");
 
-refreshBtn.addEventListener("click", ()=>{
-    document.location.reload();
+refreshBtn.addEventListener("click", () => {
+  document.location.reload();
 });
 
-
-
 async function displayQuote() {
-   fetch(apiUrl)
-   .then((response) => response.json())
-   .then(data => {
-        const randomIndex = Math.floor(Math.random() * data.length);
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      const randomIndex = Math.floor(Math.random() * data.length);
 
-        const selectedQuote = data[randomIndex];
+      const selectedQuote = data[randomIndex];
 
-        const quoteText = selectedQuote.text;
-        const authorName = selectedQuote.author;
+      const quoteText = selectedQuote.text;
+      let authorName = selectedQuote.author;
 
-        console.log(quoteText);
-
-            content.innerHTML = `
+      authorName = authorName.replace(', type.fit', '');
+      
+      content.innerHTML = `
         <div class="card" id="card">
 
             <div class="quote--wrapper">
@@ -43,9 +40,7 @@ async function displayQuote() {
             </div>
         </div> 
         `;
-   })
+    });
 }
 
 displayQuote();
-
-
