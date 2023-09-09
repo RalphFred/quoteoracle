@@ -1,0 +1,41 @@
+# QuoteOracle
+
+QuoteOracle is a simple and elegant web application designed to inspire and uplift users by providing a random selection of thought-provoking quotes. Built with HTML, CSS, and vanilla JavaScript, this project fetches quotes from an external API and presents them in a clean and visually appealing user interface.
+
+![QuoteOracle Screenshot](screenshot.png)
+
+## Features
+
+- **Random Quotes**: Click the refresh button to load a new random quote instantly.
+
+- **Beautiful Design**: The user interface is carefully crafted with modern design principles, including a quote animation and a subtle blur effect.
+
+- **Responsive**: QuoteOracle is responsive and works seamlessly on various screen sizes, from desktop to mobile devices.
+
+## Demo
+
+See QuoteOracle in action by [clicking here](#https://ralphfred.github.io/quoteoracle/).
+
+## Usage
+
+To use QuoteOracle locally, follow these simple steps:
+
+1. Clone this repository to your local machine using `git clone`.
+
+2. Open the `index.html` file in your preferred web browser.
+
+3. Click the refresh button to fetch and display a new inspiring quote.
+
+## Contributions
+
+We welcome contributions to make QuoteOracle even better. If you have ideas for improvements or new features, please fork the repository, make your changes, and submit a pull request. We'll review your contributions and merge them if they align with the project's goals.
+
+## Credits
+
+- **API**: The quotes are fetched from [type.fit](https://type.fit/api/quotes).
+
+- **Fonts**: We use the "Indie Flower" and "Neucha" fonts from Google Fonts to enhance the visual appeal of the quotes.
+
+- **Icons**: Iconography is provided by Font Awesome.
+
+- **Loading Animation**: The loading animation is powered by LottieFiles.
